@@ -8,7 +8,7 @@ import { Proveedor } from './interface/proveedor';
   providedIn: 'root'
 })
 export class ProductosService {
-  
+
   urlBase:string="http://localhost:8087/api";
 
   constructor(private http:HttpClient) { }

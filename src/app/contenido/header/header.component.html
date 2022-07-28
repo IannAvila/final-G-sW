@@ -21,10 +21,18 @@
      <a [routerLink]="['/inicio']" class="nav-item nav-link"><span style="size: 5px;" >Inicio </span> </a>
      <a [routerLink]="['/tienda']" class="nav-item nav-link">Tienda</a>
      <a href="/login" class="nav-item nav-link">Iniciar Sesion</a>
-     <a [routerLink]="['/comprar']" class="nav-item nav-link">Carrito</a>
+     <a id="cart-link" href="https://bootstrap.jumpseller.com/cart" class="trsn nav-link" title="View/Edit Cart">
+      <i class="fas fa-shopping-cart"></i>
+      <span id="nav-bar-cart"><span class="cart-size">0</span> Product(s) | $0</span>
+    </a>
+    <form class="navbar-form float-right form-inline d-none d-lg-flex search_mini_form" method="get" action="/search">
+      <input type="text" value="" name="q" class="form-control form-control-sm" onfocus="javascript:this.value=''" placeholder="Search for products">
+      <button type="submit" class="btn btn-secondary btn-sm"><i class="fas fa-search"></i></button>
+    <input type="hidden"></form>
    </div>
  </div>
 </nav>
+
 <!-- Navbar End -->
 <!-- Topbar Start -->
 <div class="container-fluid bg-light p-0 ">
@@ -48,12 +56,13 @@
         ></a>
         -->
 
-        <div class="input-group rounded">
+
+        <!--<div class="input-group rounded">
           <span class="input-group-text border-0" id="search-addon">
             <i class="fas fa-search"></i>
           </span>
           <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-        </div>
+        </div>-->
 
       </div>
     </div>
