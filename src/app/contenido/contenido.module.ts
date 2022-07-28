@@ -1,16 +1,11 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { InicioComponent } from './inicio/inicio.component';
-import { ContactoComponent } from './contacto/contacto.component';
-import { NosotrosComponent } from './nosotros/nosotros.component';
-import { ServiciosComponent } from './servicios/servicios.component';
-import { AppRoutingModule } from '../app-routing/app-routing.module';
-import { LoginComponent } from './login/login.component';
-import { PrincipalComponent } from './principal/principal.component';
-import { FormsModule } from '@angular/forms';
-
+import { CommonModule } from "@angular/common";
+import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { AppRoutingModule } from "../app-routing/app-routing.module";
+import { FooterComponent } from "./footer/footer.component";
+import { HeaderComponent } from "./header/header.component";
+import { InicioComponent } from "./inicio/inicio.component";
+import { LoginComponent } from "./login/login.component";
 
 
 @NgModule({
@@ -18,20 +13,13 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     InicioComponent,
-    ContactoComponent,
-    NosotrosComponent,
-    ServiciosComponent,
     LoginComponent,
-    PrincipalComponent
   ],
   exports:[
     HeaderComponent,
     FooterComponent,
     InicioComponent,
-    ContactoComponent,
-    NosotrosComponent,
-    ServiciosComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     CommonModule,
