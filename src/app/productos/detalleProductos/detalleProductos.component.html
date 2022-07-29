@@ -1,6 +1,6 @@
 <div class="card bg-card text-dark">
   <div class="card-header">
-  Detalle Cliente
+  Detalle Producto
   </div>
 
   <div class="container">
@@ -9,16 +9,15 @@
         <ul class="list-group text-dark mb-3">
           <li class="list-group">
               <div class="col-sm">
-                <img src="http://localhost:8087/api/uploads/img/%7B%7Bcliente.imagen%7D%7D" alt="{{cliente.imagen}}"
+                <img src="http://localhost:8087/api/uploads/img/{{producto.imagen}}" alt="{{producto.imagen}}"
                  class="img-thumbnail row" style="width: 300px;">
               </div>
           </li>
-          <li class="list-group">Nombre: {{cliente.nombre}}</li>
-          <li class="list-group">Apellido: {{cliente.apellido}}</li>
-          <li class="list-group">Email: {{cliente.email}}</li>
-          <li class="list-group">Telefono: {{cliente.telefono}}</li>
-          <li class="list-group">Region: {{cliente.region.nombre}}</li>
-          <li class="list-group">Fecha: {{cliente.createAt}}</li>
+          <li class="list-group">Nombre: {{producto.nombre}}</li>
+          <li class="list-group">Codigo Producto: {{producto.codigo_producto}}</li>
+          <li class="list-group">Descripcion {{producto.descripcion}}</li>
+          <li class="list-group">Cantidad: {{producto.stock}}</li>
+          <li class="list-group">Precio: {{producto.precio}}</li>
 
 
         </ul>

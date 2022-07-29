@@ -7,10 +7,10 @@ import { Cliente } from '../interface/cliente';
 
 @Component({
   selector: 'app-detalle',
-  templateUrl: './detalle-cliente.component.html',
-  styleUrls: ['./detalle-cliente.component.css']
+  templateUrl: './detalleCliente.component.html',
+  styleUrls: ['./detalleCliente.component.css']
 })
-export class DetalleComponent implements OnInit {
+export class DetalleClientesComponent implements OnInit {
 
   cliente!:Cliente;
   fotoSeleccionada!:File;

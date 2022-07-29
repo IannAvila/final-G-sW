@@ -5,8 +5,8 @@ import { ProductosService } from '../productos.service';
 
 @Component({
   selector: 'app-contenido',
-  templateUrl: './Productos.component.html',
-  styleUrls: ['./Productos.component.css']
+  templateUrl: './contenidoProductos.component.html',
+  styleUrls: ['./contenidoProductos.component.css']
 })
 export class ContenidoProductosComponent implements OnInit {
   productos:Producto[]=[];

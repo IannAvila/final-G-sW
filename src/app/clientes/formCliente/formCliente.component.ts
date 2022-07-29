@@ -7,10 +7,10 @@ import { Region } from '../interface/region';
 
 @Component({
   selector: 'app-form',
-  templateUrl: './form-cliente.component.html',
-  styleUrls: ['./form-cliente.component.css']
+  templateUrl: './formCliente.component.html',
+  styleUrls: ['./formCliente.component.css']
 })
-export class FormComponent implements OnInit {
+export class FormClienteComponent implements OnInit {
   cliente:Cliente = new Cliente();
   regiones:Region[]=[];
 

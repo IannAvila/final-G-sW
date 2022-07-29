@@ -5,10 +5,10 @@ import { Cliente } from '../interface/cliente';
 
 @Component({
   selector: 'app-contenido',
-  templateUrl: './contenido-clientes.component.html',
-  styleUrls: ['./contenido-clientes.component.css']
+  templateUrl: './contenidoClientes.component.html',
+  styleUrls: ['./contenidoClientes.component.css']
 })
-export class ContenidoComponent implements OnInit {
+export class ContenidoClientesComponent implements OnInit {
   clientes:Cliente[]=[];
   imagenSrc:string="";
 

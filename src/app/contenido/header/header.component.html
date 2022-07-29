@@ -5,7 +5,7 @@
  <a class="navbar-brand d-flex align-items-center">
    <h1 class="m-0">
      <!--i class="fa fa-building text-primary me-3"></i>G'sW-->
-     <img class="w-100" src="./assets/img/logo.png" alt="Image" />
+     <img width="70px" height="75px" src="./assets/img/logo.png" alt="Image" />
    </h1>
  </a>
  <button
@@ -18,21 +18,17 @@
  </button>
  <div class="collapse navbar-collapse" id="navbarCollapse">
    <div class="navbar-nav ms-auto py-3 py-lg-0">
-     <a [routerLink]="['/inicio']" class="nav-item nav-link"><span style="size: 5px;" >Inicio </span> </a>
+     <a [routerLink]="['/inicio']" class="nav-item nav-link active"><span style="size: 5px;" >Inicio </span> </a>
      <a [routerLink]="['/tienda']" class="nav-item nav-link">Tienda</a>
-     <a href="/login" class="nav-item nav-link">Iniciar Sesion</a>
-     <a id="cart-link" href="https://bootstrap.jumpseller.com/cart" class="trsn nav-link" title="View/Edit Cart">
-      <i class="fas fa-shopping-cart"></i>
-      <span id="nav-bar-cart"><span class="cart-size">0</span> Product(s) | $0</span>
-    </a>
-    <form class="navbar-form float-right form-inline d-none d-lg-flex search_mini_form" method="get" action="/search">
-      <input type="text" value="" name="q" class="form-control form-control-sm" onfocus="javascript:this.value=''" placeholder="Search for products">
-      <button type="submit" class="btn btn-secondary btn-sm"><i class="fas fa-search"></i></button>
-    <input type="hidden"></form>
+     <a href="/login" class="nav-item nav-link">Usuario</a>
+	<a id="cart-link" href="https://bootstrap.jumpseller.com/cart" class="trsn nav-link" title="View/Edit Cart">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="nav-bar-cart"><span class="cart-size">0</span> Product(s) | $0</span>
+      </a>
+     <a [routerLink]="['/comprar']" class="nav-item nav-link">Carrito</a>
    </div>
  </div>
 </nav>
-
 <!-- Navbar End -->
 <!-- Topbar Start -->
 <div class="container-fluid bg-light p-0 ">
@@ -41,28 +37,12 @@
 
     <div class="col-lg-5 px-5 text-end">
       <div class="h-100 d-inline-flex align-items-left">
-        <!--
-        <a class="btn btn-square border-end border-start" href=""
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-        <a class="btn btn-square border-end" href=""
-          ><i class="fab fa-twitter"></i
-        ></a>
-        <a class="btn btn-square border-end" href=""
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-        <a class="btn btn-square border-end" href=""
-          ><i class="fab fa-instagram"></i
-        ></a>
-        -->
-
-
-        <!--<div class="input-group rounded">
+        <div class="input-group rounded">
           <span class="input-group-text border-0" id="search-addon">
             <i class="fas fa-search"></i>
           </span>
           <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-        </div>-->
+        </div>
 
       </div>
     </div>

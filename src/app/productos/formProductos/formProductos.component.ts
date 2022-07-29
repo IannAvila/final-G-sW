@@ -11,8 +11,8 @@ import { ProductosService } from '../productos.service';
 
 @Component({
   selector: 'app-form',
-  templateUrl: './form-productos.component.html',
-  styleUrls: ['./form-productos.component.css']
+  templateUrl: './formProductos.component.html',
+  styleUrls: ['./formProductos.component.css']
 })
 export class FormProductosComponent implements OnInit {
 
@@ -38,7 +38,7 @@ export class FormProductosComponent implements OnInit {
     );
   }
 
-  compararRegion(o1:Proveedor,o2:Proveedor):boolean{
+  compararProveedor(o1:Proveedor,o2:Proveedor):boolean{
     if(o1===undefined && o2===undefined){
       return true;
     }
@@ -50,7 +50,7 @@ export class FormProductosComponent implements OnInit {
     console.log(this.producto);
     this.servicio.create(this.producto).subscribe(
       resp=>{
-        swal('Nuevo cliente',`${this.producto.nombre} creado con éxito`,'success');
+        swal('Nuevo Producto',`${this.producto.nombre} creado con éxito`,'success');
         this.router.navigate(['/productos']);
       },
       err=>{
@@ -71,4 +71,22 @@ export class FormProductosComponent implements OnInit {
       }
     );
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -2,20 +2,25 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from '../app-routing/app-routing.module';
 import { FormsModule } from '@angular/forms';
-import { FormComponent } from './form-cliente/form-cliente.component';
-import { DetalleComponent } from './detalle-cliente/detalle-cliente.component';
-import { ContenidoComponent } from './contenido-clientes/contenido-clientes.component';
+
+import { ContenidoClientesComponent } from './contenidoClientes/contenidoClientes.component';
+import { DetalleClientesComponent } from './detalleCliente/detalleCliente.component';
+import { FormClienteComponent } from './formCliente/formCliente.component';
+
+
 
 @NgModule({
   declarations: [
-    FormComponent,
-    DetalleComponent,
-    ContenidoComponent
+    ContenidoClientesComponent,
+    DetalleClientesComponent,
+    FormClienteComponent
+
+
   ],
   exports:[
-    FormComponent,
-    DetalleComponent,
-    ContenidoComponent
+    ContenidoClientesComponent,
+    DetalleClientesComponent,
+    FormClienteComponent
   ],
   imports: [
     CommonModule,

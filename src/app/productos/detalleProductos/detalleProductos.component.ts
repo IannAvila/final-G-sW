@@ -7,8 +7,8 @@ import { HttpEventType } from '@angular/common/http';
 
 @Component({
   selector: 'app-detalle',
-  templateUrl: './detalle-productos.component.html',
-  styleUrls: ['./detalle-productos.component.css']
+  templateUrl: './detalleProductos.component.html',
+  styleUrls: ['./detalleProductos.component.css']
 })
 export class DetalleProductosComponent implements OnInit {
 

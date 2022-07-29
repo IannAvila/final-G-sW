@@ -8,23 +8,27 @@ import { InicioComponent } from "./inicio/inicio.component";
 import { LoginComponent } from "./login/login.component";
 
 
+
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
     InicioComponent,
     LoginComponent,
+   
   ],
   exports:[
     HeaderComponent,
     FooterComponent,
     InicioComponent,
     LoginComponent,
+
   ],
   imports: [
     CommonModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+
   ]
 })
 export class ContenidoModule { }
